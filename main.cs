@@ -3,6 +3,7 @@ using System.IO;
 using System.Threading;
 class Program {
   public static void Main (string[] args) {
+		float snake = 1;
 		while(true){
 			string logon = File.ReadAllText("./user.txt");
 			string logonpass = File.ReadAllText("./log.txt");
@@ -28,7 +29,7 @@ class Program {
 					Console.Clear();
 					if(log == logonpass){
 						while(true){
-						Console.WriteLine("do: \ndelete user \nshutdown \nlogout \nsay \n");
+						Console.WriteLine("do: \n delete user \n shutdown \n logout \n say \n ");
 						string doit = Console.ReadLine();
 						if(doit == "delete user"){
 								logonpass = logonpass.Replace(logonpass, "[[]]");
