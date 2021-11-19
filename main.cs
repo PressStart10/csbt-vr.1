@@ -3,7 +3,6 @@ using System.IO;
 using System.Threading;
 class Program {
   public static void Main (string[] args) {
-		float snake = 1;
 		while(true){
 			string logon = File.ReadAllText("./user.txt");
 			string logonpass = File.ReadAllText("./log.txt");
